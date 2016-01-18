@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <livroandroid.lib.view.RoundedImageView
+            android:id="@+id/iv_foto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/cb_aluno_atividade"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:src="@drawable/aluno"/>
+
+        <TextView
+            android:id="@+id/tv_nome"
+            style="@style/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/iv_foto"
+            android:layout_toRightOf="@+id/iv_foto"
+            android:paddingLeft="13dp"
+            android:paddingTop="5dp"
+            android:text="@string/desricao" />
+
+        <TextView
+            android:id="@+id/tv_sobrenome"
+            style="@style/subtitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_nome"
+            android:layout_toEndOf="@+id/iv_foto"
+            android:layout_toRightOf="@+id/iv_foto"
+            android:paddingBottom="5dp"
+            android:paddingLeft="13dp"
+            android:paddingTop="5dp"
+            android:text="@string/desricao" />
+
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/cb_aluno_atividade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:checked="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="5dp"
+            android:gravity="center_vertical"
+            style="@style/LightCheckBoxDrawable"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_divisor"
+        android:background="@color/divider" />
+</LinearLayout>

@@ -1,0 +1,192 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:minWidth="@dimen/popup_width"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/rolagem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:clipToPadding="false"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <livroandroid.lib.view.RoundedImageView
+                    android:id="@+id/iv_foto"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:src="@drawable/aluno" />
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/edt_nome"
+                    style="@style/LightEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nome"
+                    android:inputType="textMultiLine"
+                    app:et_inputId="@+id/textfield_et_char_counter_input"
+                    app:et_supportMode="helper" />
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/edt_sobrenome"
+                    style="@style/LightEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Sobrenome"
+                    android:inputType="textMultiLine"
+                    app:et_inputId="@+id/textfield_et_char_counter_input"
+                    app:et_supportMode="helper" />
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/edt_endereco"
+                    style="@style/LightEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Endereço"
+                    android:inputType="textMultiLine"
+                    app:et_inputId="@+id/textfield_et_char_counter_input"
+                    app:et_supportMode="helper" />
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/edt_telefone"
+                    style="@style/LightEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Telefone"
+                    android:inputType="phone"
+                    app:et_inputId="@+id/textfield_et_char_counter_input"
+                    app:et_supportMode="helper" />
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/edt_email"
+                    style="@style/LightEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    app:et_inputId="@+id/textfield_et_char_counter_input"
+                    app:et_supportMode="helper" />
+
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/edt_data_nascimento"
+                    style="@style/LightEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:hint="Data de nascimento"
+                    android:inputType="none"
+                    android:selectAllOnFocus="true"
+                    app:et_inputId="@+id/textfield_et_char_counter_input"
+                    app:et_supportMode="helper" />
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/edt_descricao"
+                    style="@style/LightEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Observação"
+                    android:inputType="textMultiLine"
+                    app:et_inputId="@+id/textfield_et_char_counter_input"
+                    app:et_supportMode="helper" />
+
+                <com.rey.material.widget.TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Responsável contato"
+                    android:textColor="@color/accent"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider"/>
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/edt_nome_responsavel"
+                    style="@style/LightEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nome"
+                    android:inputType="textMultiLine"
+                    app:et_inputId="@+id/textfield_et_char_counter_input"
+                    app:et_supportMode="helper" />
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/edt_telefone_responsavel"
+                    style="@style/LightEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Telefone"
+                    android:inputType="phone"
+                    app:et_inputId="@+id/textfield_et_char_counter_input"
+                    app:et_supportMode="helper" />
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/edt_email_responsavel"
+                    style="@style/LightEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    app:et_inputId="@+id/textfield_et_char_counter_input"
+                    app:et_supportMode="helper" />
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rolagem"
+        android:gravity="bottom|right"
+        android:orientation="horizontal">
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btn_cancelar"
+            style="@style/BtnColorNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/white"
+            android:text="@string/cancelar"
+            android:textColor="@color/accent"
+            app:rd_enable="true" />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btn_editar"
+            style="@style/BtnColorNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:background="@android:color/white"
+            android:text="@string/atualizar"
+            android:textColor="@color/accent"
+            app:rd_enable="true" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

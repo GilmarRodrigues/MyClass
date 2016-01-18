@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <!-- Lista com os compromissos de hoje -->
+        <item
+            android:id="@+id/nav_item_hoje"
+            android:checked="true"
+            android:icon="@drawable/ic_drawer_brightness"
+            android:title="@string/hoje" />
+
+        <!-- Lista com todos as turma -->
+        <item
+            android:id="@+id/nav_item_turmas"
+            android:checked="true"
+            android:icon="@drawable/ic_drawer_multiple"
+            android:title="@string/turma" />
+        <!-- Listar horaio -->
+        <item
+            android:id="@+id/nav_item_horario"
+            android:checked="true"
+            android:icon="@drawable/ic_drawer_clock"
+            android:title="@string/horario" />
+        <!-- Lista de anotacões-->
+        <item
+            android:id="@+id/nav_item_anotacoes"
+            android:checked="true"
+            android:icon="@drawable/ic_drawer_pencil"
+            android:title="@string/anotacao" />
+
+        <!-- Lista de relatorio-->
+        <item
+            android:id="@+id/nav_item_relatotio"
+            android:checked="true"
+            android:icon="@drawable/ic_drawer_document"
+            android:title="@string/relatorio" />
+
+        <!-- Lista de relatorio-->
+        <item
+            android:id="@+id/nav_item_feedback"
+            android:checked="true"
+            android:icon="@drawable/ic_drawer_information"
+            android:title="@string/feedback" />
+    </group>
+</menu>

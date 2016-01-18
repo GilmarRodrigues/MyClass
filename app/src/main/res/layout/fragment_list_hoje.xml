@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="br.com.myclass.fragment.ListHorarioFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/tv_dia_data" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="@string/dia_data"
+                android:textColor="@color/accent" android:gravity="center_vertical"
+                android:paddingTop="8dp" android:paddingBottom="8dp" android:paddingLeft="25dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"/>
+
+            <android.support.v7.widget.RecyclerView android:id="@+id/rv_list_hoje"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:cacheColorHint="@android:color/transparent"
+                android:clipToPadding="false"
+                android:divider="@null" android:dividerHeight="0dp"
+                android:listSelector="@android:color/transparent"
+                android:scrollbarStyle="outsideOverlay" android:scrollbars="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_sol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_action_sol"
+            android:paddingBottom="10dp"
+            android:visibility="invisible"/>
+
+        <com.rey.material.widget.TextView
+            android:id="@+id/tv_msg_ap_dia"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/msg_aproveite_seu_dia" android:textColor="@color/accent"
+            android:gravity="center" android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" android:layout_gravity="center"
+            android:layout_below="@+id/iv_sol" android:textSize="18sp"
+            android:paddingLeft="20dp" android:paddingRight="20dp"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

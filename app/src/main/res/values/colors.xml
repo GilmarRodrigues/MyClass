@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#FF9800</color>
+    <color name="primary_dark">#F57C00</color>
+    <color name="control_normal">#FF78909C</color>
+    <color name="color_primary_quarter">#33FF9800</color>
+    <color name="color_primary_half">#90FF9800</color>
+    <color name="primary_light">#FFE0B2</color>
+    <color name="accent">#4CAF50</color>
+    <color name="accent_700">#388E3C</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#848484</color>
+    <color name="control_highlight">#FFCC80</color>
+
+    <color name="icons">#212121</color>
+    <color name="divider">#d9d9d9</color>
+    <color name="background">#FAFAFA</color>
+    <color name="card_view">#FFFFFF</color>
+    <color name="sucesso">#4CAF50</color>
+    <color name="cancelar">#F44336</color>
+    <color name="informacao">#4fafff</color>
+
+    <!-- Outras cores -->
+    <color name="transparent">#0000</color>
+    <color name="black">#000</color>
+    <color name="blue">#00f</color>
+    <color name="color_half_blue">#902196F3</color>
+    <color name="red">#f00</color>
+    <color name="color_half_red">#90F44336</color>
+    <color name="green">#0f0</color>
+    <color name="gray">#eee</color>
+    <color name="refresh_progress_1">#33B5E5</color>
+    <color name="refresh_progress_2">#99CC00</color>
+    <color name="refresh_progress_3">#CC0000</color>
+</resources>

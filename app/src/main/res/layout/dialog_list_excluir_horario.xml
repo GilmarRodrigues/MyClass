@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:minWidth="@dimen/popup_width"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rolagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView android:id="@+id/rv_lista_horario"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:clipToPadding="false"
+            android:divider="@null" android:dividerHeight="0dp"
+            android:listSelector="@android:color/transparent"
+            android:scrollbarStyle="outsideOverlay" android:scrollbars="vertical"/>
+
+        <com.rey.material.widget.TextView
+            android:id="@+id/tv_msg_horario_vazio_bd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_vazio_list_horario_bd"
+            android:textColor="@color/accent"
+            android:drawablePadding="7dp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/btn_cad_left_right"
+            android:paddingRight="@dimen/btn_cad_left_right"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rolagem"
+        android:gravity="bottom|right"
+        android:orientation="horizontal">
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btn_cancelar"
+            style="@style/BtnColorNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/white"
+            android:text="@string/cancelar"
+            android:textColor="@color/accent"
+            app:rd_enable="true" />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btn_excluir"
+            style="@style/BtnColorNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:background="@android:color/white"
+            android:text="@string/excluir"
+            android:textColor="@color/red"
+            app:rd_enable="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

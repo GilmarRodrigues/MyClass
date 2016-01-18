@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_detalhes"
+        android:orderInCategory="100"
+        android:title="@string/detalhes"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_editar"
+        android:orderInCategory="100"
+        android:title="@string/editar"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_arquivar"
+        android:orderInCategory="100"
+        android:title="@string/arquivar"
+        app:showAsAction="never" />
+
+</menu>

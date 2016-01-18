@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:minWidth="@dimen/popup_width"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/rolagem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:clipToPadding="false"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/edt_disciplina"
+                    style="@style/LightEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Disciplina"
+                    android:inputType="textMultiLine"
+                    app:et_inputId="@+id/textfield_et_char_counter_input"
+                    app:et_supportMode="helper" />
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/edt_curso"
+                    style="@style/LightEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Curso/Série"
+                    android:inputType="textMultiLine"
+                    app:et_inputId="@+id/textfield_et_char_counter_input"
+                    app:et_supportMode="helper" />
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/edt_data_inicial"
+                    style="@style/LightEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:hint="Data de início da classe"
+                    android:inputType="none"
+                    android:selectAllOnFocus="true"
+                    app:et_inputId="@+id/textfield_et_char_counter_input"
+                    app:et_supportMode="helper" />
+
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/edt_data_fim"
+                    style="@style/LightEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:hint="Data de encerramento da classe"
+                    android:inputType="none"
+                    android:selectAllOnFocus="true"
+                    app:et_inputId="@+id/textfield_et_char_counter_input"
+                    app:et_supportMode="helper" />
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/edt_descricao"
+                    style="@style/LightEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Observação"
+                    android:inputType="textMultiLine"
+                    app:et_inputId="@+id/textfield_et_char_counter_input"
+                    app:et_supportMode="helper" />
+
+                <com.rey.material.widget.TextView
+                    android:id="@+id/tv_horario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_horario"
+                    android:textColor="@color/accent"
+                    android:drawablePadding="7dp"
+                    android:drawableLeft="@drawable/ic_plus"
+                    android:gravity="center_vertical" />
+
+                <com.rey.material.widget.TextView
+                    android:id="@+id/tv_horario_excluir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/excluir_horario"
+                    android:textColor="@color/red"
+                    android:drawablePadding="7dp"
+                    android:drawableLeft="@drawable/ic_drawer_delete"
+                    android:gravity="center_vertical" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider"/>
+
+                <LinearLayout
+                    android:id="@+id/ln_horario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rolagem"
+        android:layout_weight="5"
+        android:gravity="bottom|right"
+        android:orientation="horizontal">
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btn_cancelar"
+            style="@style/BtnColorNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/white"
+            android:text="@string/cancelar"
+            android:textColor="@color/accent"
+            app:rd_enable="true" />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btn_editar"
+            style="@style/BtnColorNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:background="@android:color/white"
+            android:text="@string/atualizar"
+            android:textColor="@color/accent"
+            app:rd_enable="true" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

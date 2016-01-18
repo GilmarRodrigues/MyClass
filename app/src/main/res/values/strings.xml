@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">MyClass</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="desricao">Descrição</string>
+
+    <string name="descricaoturma">Descrição:</string>
+    <string name="salvar">SALVAR</string>
+    <string name="cadastrar">Cadastrar</string>
+
+    <string name="abrirgaleria">Abrir Galeria</string>
+    <string name="abrircamera">Abrir Camera</string>
+    <string name="novo_comportamento">Novo Comportamento</string>
+    <string name="comportamento">Comportamento</string>
+    <string name="data">Data</string>
+    <string name="title_activity_tela_form_comportamento">Novo Comportamento</string>
+    <string name="positivo">Positivo</string>
+    <string name="negativo">Negativo</string>
+    <string name="title_activity_tela_form_relatorio">Relatório</string>
+    <string name="gerar_relatorio">Gerar Relatório</string>
+    <string name="data_inicio">Data Inícial</string>
+    <string name="data_fim">Data Final</string>
+    <string name="text_combo">Textt Combo</string>
+    <string name="text_combo2">Texte combo 2</string>
+    <string name="sel_inicio">Selecione a data inicial:</string>
+    <string name="sel_final">Selecione a data final:</string>
+    <string name="calendario">Calendário</string>
+    <string name="comentario">Comentário</string>
+
+    <!-- Tabs -->
+
+    <!-- Tabela - Classe-->
+    <string name="turma">Classe</string>
+    <string name="title_activity_tab">Classe</string>
+    <string name="turmas">Classes</string>
+    <string name="excluir_classe">Deseja excluir a classe</string>
+    <string name="excluir_classe_sucesso"> excluida com sucesso.</string>
+    <string name="title_activity_tela_list_turma">Lista de Classes</string>
+    <string name="turma_atualizar">Atualizar Classe</string>
+    <string name="title_activity_tela_detalhes_turma">Detalhes da Classe</string>
+    <string name="title_activity_tela_form_turma">Nova Classe</string>
+    <string name="msg_turma_atualizada_sucesso">Classe atualizada com sucesso.</string>
+
+    <!-- PopupMenu-->
+    <string name="detalhes">Detalhes</string>
+    <string name="arquivar">Excluir</string>
+    <string name="editar">Editar</string>
+
+    <!-- A -->
+    <string name="anotacao">Anotações</string>
+    <string name="atualizar">ATUALIZAR</string>
+    <string name="add_conteudo_prova">Adicionar Conteúdo da Avaliação</string>
+    <string name="adicionar_alunos">Adicionar Alunos</string>
+    <string name="atividades">Atividades</string>
+    <string name="adicionar">ADICIONAR</string>
+    <string name="add_aluno_atividade">Adicionar Alunos</string>
+    <string name="add_todos">ADD TODOS</string>
+
+    <!-- C -->
+    <string name="cancelar">CANCELAR</string>
+    <string name="construcao">Em Construção</string>
+
+    <!-- D-->
+    <string name="desfazer">DESFAZER</string>
+    <string name="descricao">Descrição</string>
+    <string name="dia_data">Dia e data</string>
+
+    <!-- E -->
+    <string name="excluir_horario">Excluir Horário</string>
+
+    <!-- F -->
+    <string name="feedback">Feedback e Ajuda</string>
+
+    <!-- L -->
+    <string name="lixeira">Lixeira</string>
+
+    <!-- M -->
+    <string name="mapa">Mapa</string>
+    <string name="msg_alerta_permissao">Para utilizar este aplicativo, você precisa aceitar as permissões.</string>
+    <string name="msg_error_conexao_indisponivel">Conexão indisponível. Verifique seu Wi-Fi ou 3G.</string>
+    <string name="msg_vazio_list_alunos">Todos os alunos já foram adicionadas.</string>
+    <string name="msg_vazio_list_alunos_bd">Você não cadastrou nenhum aluno!</string>
+    <string name="msg_vazio_list_aulas_bd">Você não cadastrou nenhuma aula!</string>
+    <string name="msg_vazio_list_horario_bd">Você não cadastrou nenhum horário!</string>
+    <string name="msg_vazio_list_alunos_nao_adicionado">Você não adicionou nenhum aluno a essa atividade!</string>
+
+    <!-- N -->
+    <string name="nav_drawer_username">Gilmar Rodrigues</string>
+    <string name="nav_drawer_email">gilmarrodriguessti@gmail.com</string>
+    <string name="nome">Nome</string>
+    <string name="novo_aluno">Novo Aluno</string>
+    <string name="nova_aula">Nova Aula</string>
+    <string name="nova_turma">Nova Classe</string>
+    <string name="nova_atividade">Nova Atividade</string>
+    <string name="nova_prova">Nova Avaliação</string>
+    <string name="nova_horario">Novo Horário</string>
+    <string name="notas">Notas</string>
+
+    <!-- O -->
+    <string name="ok">OK</string>
+
+    <!-- H -->
+    <string name="hoje">Hoje</string>
+    <string name="horario">Horário</string>
+
+
+    <!-- R -->
+    <string name="relatorio">Relatórios</string>
+
+    <!-- S -->
+    <string name="sem_desricao">Sem Descrição</string>
+
+    <!-- T -->
+    <string name="title_activity_teste">TesteActivity</string>
+    <string name="title_activity_atividade">Atividades</string>
+    <string name="title_activity_tela_list_atividade">Lista de Comportamentos</string>
+    <string name="title_activity_tela_form_aluno">Novo Aluno</string>
+    <string name="title_activity_tela_list_aluno">Lista de Alunos</string>
+    <string name="todos_os_direitos">www.myclassapp.com.br</string>
+    <string name="title_activity_nota">Nota da Avaliação</string>
+
+    <!-- V -->
+    <string name="vazio" />
+
+    <!-- Sobre -->
+    <string name="about_dialog_text">
+    <![CDATA[
+        <b>Use a tecnologia como beneficio em suas aulas.</b><br><br>
+        Versao %s<br><br>
+        <a href="http://www.myclassapp.com.br">http://myclassapp.com.br</a><br><br>
+        <a href="https://www.facebook.com/myclassaplication">https://facebook.com/myclassaplication</a><br><br>
+        <a href="https://www.plus.google.com/+MyclassappBr">https://plus.google.com/+MyclassappBr</a><br><br>
+        <a href="https://www.twitter.com/MyClassApp">https://twitter.com/MyClassApp</a>
+    ]]>
+    </string>
+    <string name="about_dialog_title">MyClass</string>
+    <string name="action_about">Sobre</string>
+    <string name="msg_aproveite_seu_dia">Não há nada agendado para hoje! Aproveite o seu dia.</string>
+    <string name="add_horario">Adicionar Horário</string>
+    <string name="excluir">EXCLUIR</string>
+
+    <!-- Intro Slide-->
+    <string name="title_activity_default_intro">DefaultIntro</string>
+
+</resources>

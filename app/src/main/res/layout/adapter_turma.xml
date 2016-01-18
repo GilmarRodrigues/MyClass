@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/gmailitem_letter"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/iv_popupmenu"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:src="@drawable/aluno" />
+
+            <TextView
+                android:id="@+id/tv_disciplina"
+                style="@style/titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/gmailitem_letter"
+                android:layout_toRightOf="@+id/gmailitem_letter"
+                android:paddingLeft="13dp"
+                android:paddingTop="5dp"
+                android:text="@string/desricao" />
+
+            <TextView
+                android:id="@+id/tv_curso"
+                style="@style/subtitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_disciplina"
+                android:layout_toEndOf="@+id/gmailitem_letter"
+                android:layout_toRightOf="@+id/gmailitem_letter"
+                android:paddingBottom="5dp"
+                android:paddingLeft="13dp"
+                android:paddingTop="5dp"
+                android:text="@string/desricao" />
+
+            <ImageView
+                android:id="@+id/iv_popupmenu"
+                android:padding="@dimen/popupmenu_paddong"
+                android:background="@drawable/popupmenu_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_popup_menu" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_divisor"
+            android:background="@color/divider" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/undo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/accent_700"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/undo_excluir"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center|start"
+            android:text="@string/arquivar"
+            android:textSize="16sp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/undo_desfazer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|end"
+            android:text="@string/desfazer"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="fab_margin_right">5dp</dimen>
+    <dimen name="fab_margin_botton">1dp</dimen>
+    <dimen name="linha_listagem_padding">15dp</dimen>
+    <dimen name="view_divisor">1dp</dimen>
+    <dimen name="btn_cad_left_right">20dp</dimen>
+    <dimen name="tv_mesage_botton">20dp</dimen>
+    <dimen name="btn_salvar_padding">5dp</dimen>
+    <dimen name="btn_salvar_margin">5dp</dimen>
+    <dimen name="ed_descricao_margin">5dp</dimen>
+    <dimen name="tv_padding">15dp</dimen>
+
+    <dimen name="fab_size">56dp</dimen>
+
+    <dimen name="fab_elevation">8dp</dimen>
+    <dimen name="fab_elevation_press">12dp</dimen>
+
+    <dimen name="popup_width">320dp</dimen>
+    <dimen name="popup_heigth">330dp</dimen>
+    <dimen name="popup_width_img">190dp</dimen>
+    <dimen name="popup_heigth_img">200dp</dimen>
+    <dimen name="popup_heigth_400">400dp</dimen>
+    <dimen name="popup_heigth_200">200dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="popupmenu_paddong">10dp</dimen>
+
+
+</resources>
