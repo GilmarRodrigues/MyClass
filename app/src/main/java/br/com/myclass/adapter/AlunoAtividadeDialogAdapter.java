@@ -3,6 +3,7 @@ package br.com.myclass.adapter;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -54,11 +55,16 @@ public class AlunoAtividadeDialogAdapter extends RecyclerView.Adapter<AlunoAtivi
         Aluno aluno = getAluno(position);
         holder.tNome.setText(aluno.getNome());
         holder.tSobrenome.setText(aluno.getSobrenome());
+        Drawable img;
         if (mList.get(position).getStatus().equals("feito")) {
+            img = mContext.getResources().getDrawable(R.drawable.ic_emoticon_happy);
             holder.cbAtividade.setChecked(true);
         }else {
+            img = mContext.getResources().getDrawable(R.drawable.ic_emoticon_sad);
             holder.cbAtividade.setChecked(false);
         }
+        holder.cbAtividade.setCompoundDrawablesWithIntrinsicBounds(img, null, null, null);
+
         Bitmap bitmap = null;
         int w = holder.ivFoto.getWidth();
         int h = holder.ivFoto.getHeight();

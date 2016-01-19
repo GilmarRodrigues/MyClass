@@ -47,7 +47,8 @@
                     android:hint="Pontos das atividades"
                     android:inputType="numberDecimal"
                     app:et_inputId="@+id/textfield_et_char_counter_input"
-                    app:et_supportMode="helper" />
+                    app:et_supportMode="helper"
+                    android:visibility="gone"/>
 
                 <com.rey.material.widget.EditText
                     android:id="@+id/edt_descricao"

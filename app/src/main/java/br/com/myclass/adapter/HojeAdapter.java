@@ -50,7 +50,7 @@ public class HojeAdapter extends RecyclerView.Adapter<HojeAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(ViewHolder holder, final int position) {
         holder.tDia.setText((position+1)+"° aula " + getTurma(position).getCurso());
-        holder.tCurso.setText("das: " + mList.get(position).getHoraInicio() + " às: " +mList.get(position).getHoraFim());
+        holder.tCurso.setText("das " + mList.get(position).getHoraInicio() + " às " +mList.get(position).getHoraFim());
         try {
             holder.tEstado.setText(getEstado(mList.get(position).getHoraInicio(), mList.get(position).getHoraFim(), holder));
         } catch (ParseException e) {

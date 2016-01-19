@@ -46,17 +46,15 @@
             android:paddingTop="5dp"
             android:text="@string/desricao" />
 
-
         <com.rey.material.widget.CheckBox
             android:id="@+id/cb_aluno_atividade"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="OK"
             android:checked="true"
+            android:paddingRight="30dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:paddingRight="5dp"
             android:gravity="center_vertical"
             style="@style/LightCheckBoxDrawable"/>
 

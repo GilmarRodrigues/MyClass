@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.rey.material.widget.Button;
+import com.rey.material.widget.CheckBox;
 import com.rey.material.widget.TextView;
 
 import java.util.List;
@@ -35,6 +36,7 @@ public class ListAddEdAlunoAtividadeDialog extends BaseDialog {
     private AlunoDialogAdapter mAdapter;
     private RecyclerView mRecyclerView;
     private TextView tMsgAlunos;
+    public CheckBox cbAtividade;
 
     public static void show(FragmentManager fm, Turma turma, List<Aluno> alunoList, Callback callback) {
         FragmentTransaction ft = fm.beginTransaction();
@@ -70,6 +72,7 @@ public class ListAddEdAlunoAtividadeDialog extends BaseDialog {
         mTurma = (Turma) getArguments().getSerializable(ListTurma.KEY);
 
         tMsgAlunos = (TextView) view.findViewById(R.id.tv_msg_alunos_vazio_bd);
+        cbAtividade = (CheckBox) view.findViewById(R.id.cb_aluno_atividade);
 
         ListAluno list = (ListAluno) getArguments().getSerializable(ListAluno.KEY);
         if (list != null) {
