@@ -45,6 +45,7 @@ public class EditarNotaDialog extends BaseDialog {
     private Prova mProva;
     private NotaHelper mHelper;
     private LinearLayout lnAtividades;
+    private com.rey.material.widget.TextView tNota;
 
     public static void show(FragmentManager fm, Nota nota, Prova prova, Callback callback) {
         FragmentTransaction ft = fm.beginTransaction();
@@ -74,6 +75,9 @@ public class EditarNotaDialog extends BaseDialog {
         btnAdcionar.setOnClickListener(onClickAtualizar());
         Button btnCancelar = (Button) view.findViewById(R.id.btn_cancelar);
         btnCancelar.setOnClickListener(onClickCancelar());
+        tNota = (com.rey.material.widget.TextView) view.findViewById(R.id.tv_atividade);
+        tNota.setOnClickListener(onClickInformationAtividade());
+
         lnAtividades = (LinearLayout) view.findViewById(R.id.ln_atividades);
         mHelper = new NotaHelper(getActivity(), view);
 
@@ -82,6 +86,15 @@ public class EditarNotaDialog extends BaseDialog {
         }
         showAtividades();
         return view;
+    }
+
+    private View.OnClickListener onClickInformationAtividade() {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                InformationNotaAtividadesDialog.showInformation(getFragmentManager());
+            }
+        };
     }
 
     private View.OnClickListener onClickAtualizar() {

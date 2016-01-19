@@ -9,6 +9,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.rey.material.widget.CheckBox;
@@ -51,36 +53,36 @@ public class AlunoAtividadeDialogAdapter extends RecyclerView.Adapter<AlunoAtivi
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, final int position) {
+    public void onBindViewHolder(final ViewHolder holder, final int position) {
         Aluno aluno = getAluno(position);
         holder.tNome.setText(aluno.getNome());
         holder.tSobrenome.setText(aluno.getSobrenome());
-        Drawable img;
+        final Drawable[] img = new Drawable[1];
         if (mList.get(position).getStatus().equals("feito")) {
-            img = mContext.getResources().getDrawable(R.drawable.ic_emoticon_happy);
+            img[0] = mContext.getResources().getDrawable(R.drawable.ic_emoticon_happy);
             holder.cbAtividade.setChecked(true);
-        }else {
-            img = mContext.getResources().getDrawable(R.drawable.ic_emoticon_sad);
+        } else {
+            img[0] = mContext.getResources().getDrawable(R.drawable.ic_emoticon_sad);
             holder.cbAtividade.setChecked(false);
         }
-        holder.cbAtividade.setCompoundDrawablesWithIntrinsicBounds(img, null, null, null);
+        holder.cbAtividade.setCompoundDrawablesWithIntrinsicBounds(img[0], null, null, null);
 
         Bitmap bitmap = null;
         int w = holder.ivFoto.getWidth();
         int h = holder.ivFoto.getHeight();
-        if(aluno.getFoto() != null) {
+        if (aluno.getFoto() != null) {
             File caminhoArquivo = new File(aluno.getFoto());
             bitmap = ImageUtils.getResizedImage(Uri.fromFile(caminhoArquivo), w, h, false);
-        }else if(aluno.getGaleria() != null){
+        } else if (aluno.getGaleria() != null) {
             try {
                 bitmap = ImageUtils.getBitmapFromUri(Uri.parse(aluno.getGaleria()), mContext, w, h);
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-        if(bitmap != null){
+        if (bitmap != null) {
             holder.ivFoto.setImageBitmap(bitmap);
-        }else{
+        } else {
             holder.ivFoto.setImageDrawable(mContext.getResources().getDrawable(R.drawable.aluno));
         }
 
@@ -98,6 +100,17 @@ public class AlunoAtividadeDialogAdapter extends RecyclerView.Adapter<AlunoAtivi
                 @Override
                 public void onClick(View v) {
                     onClickCheckBox.onClickCheckBox(v, position);
+
+                    holder.cbAtividade.setCompoundDrawablesWithIntrinsicBounds(null, null, null, null);
+                    if (mList.get(position).getStatus().equals("feito")) {
+                        img[0] = mContext.getResources().getDrawable(R.drawable.ic_emoticon_happy);
+                        holder.cbAtividade.setChecked(true);
+                    } else {
+                        img[0] = mContext.getResources().getDrawable(R.drawable.ic_emoticon_sad);
+                        holder.cbAtividade.setChecked(false);
+                    }
+                    holder.cbAtividade.setCompoundDrawablesWithIntrinsicBounds(img[0], null, null, null);
+
                 }
             });
         }
@@ -116,7 +129,7 @@ public class AlunoAtividadeDialogAdapter extends RecyclerView.Adapter<AlunoAtivi
         public void onClickCheckBox(View view, int idx);
     }
 
-    private Aluno getAluno(int position){
+    private Aluno getAluno(int position) {
         Long id = mList.get(position).getAlunoId();
         AlunoDAO dao = new AlunoDAO(mContext);
         Aluno aluno = dao.buscarPorId(id);

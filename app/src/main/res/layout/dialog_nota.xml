@@ -65,6 +65,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/atividades"
+                    android:drawableLeft="@drawable/ic_help_circle"
+                    android:drawablePadding="7dp"
                     android:textColor="@color/accent"
                     android:gravity="center_vertical" />
 

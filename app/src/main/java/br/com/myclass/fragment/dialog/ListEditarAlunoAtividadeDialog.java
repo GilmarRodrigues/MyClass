@@ -11,6 +11,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.rey.material.widget.Button;
@@ -19,6 +21,7 @@ import com.rey.material.widget.TextView;
 import java.util.List;
 
 import br.com.myclass.R;
+import br.com.myclass.activity.MainActivity;
 import br.com.myclass.adapter.AlunoAtividadeDialogAdapter;
 import br.com.myclass.dao.AlunoAtividadeDAO;
 import br.com.myclass.model.AlunoAtividade;
@@ -134,6 +137,7 @@ public class ListEditarAlunoAtividadeDialog extends BaseDialog {
                 Context context = view.getContext();
                 AlunoAtividadeDAO dao = new AlunoAtividadeDAO(context);
                 AlunoAtividade alunoAtividade = mAlunoAtividadesList.get(idx);
+
                 if (mAlunoAtividadesList.get(idx).getStatus().equals("feito")){
                     alunoAtividade.setStatus("naofeito");
                 }else {

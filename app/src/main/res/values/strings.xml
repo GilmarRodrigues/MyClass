@@ -127,6 +127,8 @@
     <string name="vazio" />
 
     <!-- Sobre -->
+    <string name="about_dialog_title">MyClass</string>
+    <string name="action_about">Sobre</string>
     <string name="about_dialog_text">
     <![CDATA[
         <b>Use a tecnologia como beneficio em suas aulas.</b><br><br>
@@ -137,8 +139,15 @@
         <a href="https://www.twitter.com/MyClassApp">https://twitter.com/MyClassApp</a>
     ]]>
     </string>
-    <string name="about_dialog_title">MyClass</string>
-    <string name="action_about">Sobre</string>
+
+    <!-- Information -->
+    <string name="information_dialog_title">Relatório de Atividades!</string>
+    <string name="information_dialog_text">
+    <![CDATA[
+        Estatísticas individuais do aluno, com base nas atividades registradas em aulas referentes a avaliação, com o intuíto de lhe auxiliar na avaliação qualitativa do mesmo.
+    ]]>
+    </string>
+
     <string name="msg_aproveite_seu_dia">Não há nada agendado para hoje! Aproveite o seu dia.</string>
     <string name="add_horario">Adicionar Horário</string>
     <string name="excluir">EXCLUIR</string>
