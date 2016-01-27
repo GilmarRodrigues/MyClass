@@ -57,7 +57,7 @@ public class MainActivity extends BaseActivity
         View view = layoutInflater.inflate(R.layout.nav_drawer_listview, container, false);
         // Preecha cabeçalho com a foto, nome e email.
         navigationDrawerFragment.setHeaderValues(view, R.id.listViewContainer,
-                R.drawable.nav_drawer_header, R.drawable.ic_logo_user, R.string.nav_drawer_username,
+                R.drawable.nav_drawer_header, R.mipmap.ic_launcher, R.string.nav_drawer_username,
                 R.string.nav_drawer_email);
         return new NavigationDrawerFragment.NavDrawerListView(view, R.id.listView);
     }

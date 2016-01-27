@@ -31,8 +31,8 @@ public class SplashActivity extends BaseActivity {
 
         if (ok) {
             // Tudo OK, pode entrar.
-            //startActivity(new Intent(this, MainActivity.class));
-            startActivity(new Intent(this, DefaultIntroActivity.class));
+            startActivity(new Intent(this, MainActivity.class));
+            //startActivity(new Intent(this, DefaultIntroActivity.class));
             finish();
         }
     }
@@ -54,8 +54,8 @@ public class SplashActivity extends BaseActivity {
         }
 
         // Permissões concedidas, pode entrar.
-        //startActivity(new Intent(this, MainActivity.class));
-        startActivity(new Intent(this, DefaultIntroActivity.class));
+        startActivity(new Intent(this, MainActivity.class));
+        //startActivity(new Intent(this, DefaultIntroActivity.class));
         finish();
     }
 }

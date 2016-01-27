@@ -40,13 +40,13 @@ public class DefaultIntroActivity extends AppIntro {
     public void onSkipPressed() {
         loadMainActivity();
         //Toast.makeText(getApplicationContext(), getString(R.string.skip), Toast.LENGTH_SHORT).show();
-        Toast.makeText(getApplicationContext(), "onSkipPressed", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getApplicationContext(), "onSkipPressed", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void onDonePressed() {
         loadMainActivity();
-        Toast.makeText(getApplicationContext(), "onDonePressed", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getApplicationContext(), "onDonePressed", Toast.LENGTH_SHORT).show();
     }
 
     @Override

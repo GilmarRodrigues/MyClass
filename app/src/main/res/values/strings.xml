@@ -89,8 +89,8 @@
     <string name="msg_vazio_list_alunos_nao_adicionado">Você não adicionou nenhum aluno a essa atividade!</string>
 
     <!-- N -->
-    <string name="nav_drawer_username">Gilmar Rodrigues</string>
-    <string name="nav_drawer_email">gilmarrodriguessti@gmail.com</string>
+    <string name="nav_drawer_username">MyClass</string>
+    <string name="nav_drawer_email">contato@myclassapp.com.br</string>
     <string name="nome">Nome</string>
     <string name="novo_aluno">Novo Aluno</string>
     <string name="nova_aula">Nova Aula</string>
